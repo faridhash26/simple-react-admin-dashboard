@@ -7,12 +7,18 @@ const Home = () => {
   return (
     <HomeWrapper>
       <SideBar />
+      <HomeContainer>Container </HomeContainer>
     </HomeWrapper>
   );
 };
 const HomeWrapper = styled.div(() => {
   return {
-    background: "red",
+    display: "flex ",
+  };
+});
+const HomeContainer = styled.div(() => {
+  return {
+    flex: 6,
   };
 });
 export default Home;
